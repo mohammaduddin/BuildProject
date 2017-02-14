@@ -52,7 +52,7 @@ private WebDriver driver;
 	        
 			//FirefoxDriver driver = new FirefoxDriver();
 			driver.navigate();
-	        driver.get("https://www.build.com/");
+	        driver.get("enter your website url here");
 	        Thread.sleep(5000);
 	    } catch (NoClassDefFoundError ex) {
 	        System.out.println("error: " + ex.getStackTrace());
@@ -120,7 +120,7 @@ private WebDriver driver;
             // filling out "shipping address" form
             PageObjects.shipping_first_name_txt(driver).sendKeys("Mohammad");
             PageObjects.shipping_last_name_txt(driver).sendKeys("Uddin");
-            PageObjects.shipping_street_address_txt(driver).sendKeys("2800 Riverview Rd");
+            PageObjects.shipping_street_address_txt(driver).sendKeys("Riverview Rd");
             PageObjects.shipping_zip_code_txt(driver).sendKeys("35242");
             PageObjects.shipping_city_txt(driver).sendKeys("Birmingham");
 
@@ -128,8 +128,8 @@ private WebDriver driver;
             StateDropdown.selectByVisibleText("Alabama");
             Thread.sleep(2000);
 
-            PageObjects.shipping_phone_number_txt(driver).sendKeys("646-662-2429");
-            PageObjects.shipping_email_address_txt(driver).sendKeys("muddin2429@gmail.com");
+            PageObjects.shipping_phone_number_txt(driver).sendKeys("000-111-1234");
+            PageObjects.shipping_email_address_txt(driver).sendKeys("yourEmail@gmail.com");
 
             // fill up "credit card" form
             PageObjects.cc_card_number_txt(driver).sendKeys("4111111111111111");

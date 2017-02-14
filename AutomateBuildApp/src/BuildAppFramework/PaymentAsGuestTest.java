@@ -52,7 +52,7 @@ private WebDriver driver;
 	        
 			//FirefoxDriver driver = new FirefoxDriver();
 			driver.navigate();
-	        driver.get("enter your website url here");
+	        driver.get("https://www.build.com/");
 	        Thread.sleep(5000);
 	    } catch (NoClassDefFoundError ex) {
 	        System.out.println("error: " + ex.getStackTrace());
